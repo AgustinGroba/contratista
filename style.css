@@ -45,9 +45,6 @@ a {
 .head__nav__pag li{
     padding-left: 65px;
 }
-.enPagina{
-    text-decoration: underline;
-}
 .logo{
     width: 180px;
     border: solid;
@@ -64,8 +61,6 @@ a {
     font-family: sans-serif;
     text-align: center;
     list-style: none;
-    position: absolute;
-    width: 100%;
     
 }
 .mainServicios{
@@ -80,6 +75,29 @@ a {
     font-size: large;
     
 }
+.head{
+    display: grid;
+    grid-template-areas: 
+    "contacto servicios inicio quienes enPagina";
+    justify-content: center;
+}
+.contacto{
+    padding-right: 60px;
+}
+.servicios{
+    padding-right: 60px;
+}
+.inicio{
+    padding-right: 20px;
+
+}
+.quienes{
+    padding-right: 30px;
+    padding-left: 10px;
+}
+.trabajos{
+    padding-left: 10px;
+}
 .carrusel{
     margin: 40px;
     align-items: center;
@@ -90,8 +108,8 @@ a {
     list-style: none;
 }
 .historia{
-    padding-left: 27% ;
-    padding-right: 27%;
+    padding-left: 22% ;
+    padding-right: 22%;
     font-size: xx-large;
 }
 .texto{
@@ -146,6 +164,7 @@ a {
 }
 .tituloGaleria{
     grid-area: tituloGaleria ;
+    padding-top: 40px;
 }
 .foto1{
     grid-area: foto1;
