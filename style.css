@@ -46,8 +46,7 @@ a {
     padding-left: 65px;
 }
 .logo{
-    width: 180px;
-    border: solid;
+    width: 200px;
     margin-top: 5px;
 }
 .body{
@@ -117,54 +116,68 @@ a {
 }
 .padre{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap:25px;
-    grid-row-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 75px;
 }
 .padre div{
     text-align: center;
-    padding-top: 5px;
+    font-style: italic;
+    
+}
+.padre h1{
+    color: #000000;
+    
+}
+.padre h2{
+    font-style: oblique;
+    color: #000000;
+    font-size: 40px;
+    text-decoration: underline ;
 }
 .titulo{ 
-    grid-area: 1 / 1 / 2 / 5; 
-    border: solid;
+    grid-area: 1 / 1 / 2 / 3; 
+    padding-top: 50px;
+}
+.titulo h1{
+    font-size: 50px;
 }
 .mail{ 
-    grid-area: 2 / 1 / 4 / 3; 
-    border: solid;
+    grid-area: 2 / 1 / 3 / 2; 
 }
 .redes2{ 
-    grid-area: 2 / 3 / 4 / 5; 
-    border: solid;
+    grid-area: 2 / 2 / 4 / 3; 
 }
 .numero{ 
-    grid-area: 4 / 1 / 6 / 3; 
-    border: solid;
+    grid-area: 3 / 1 / 4 / 2; 
 }
 .ubicacion{ 
-    grid-area: 4 / 3 / 6 / 5; 
+    grid-area: 3 / 2 / 4 / 3; 
     justify-content: center;
     align-items: center;
-    border: solid;
 }
 .ubicacion img{
-    height: 200px;
+    height: 100px;
 }
+
 .galeria{
     display: grid;
     grid-template-areas: 
     'tituloGaleria tituloGaleria tituloGaleria tituloGaleria tituloGaleria'
-    'foto1 foto2 foto3 foto4 foto5';
-    grid-template-rows: 150px;
+    'foto1 foto2 foto3 foto4 foto5'
+    'foto6 foto7 foto8 foto9 foto10';
+    grid-row-gap: 15px;
+    grid-column-gap: 5px;
 }
 .galeria img{
-    height: 400px;
+    height: 320px;
+    width: 320px;
     border: solid 1px;
 }
 .tituloGaleria{
     grid-area: tituloGaleria ;
-    padding-top: 40px;
+    padding-top: 23px;
 }
 .foto1{
     grid-area: foto1;
@@ -186,6 +199,19 @@ a {
 .footer a{
     color: white;
 }
+.body{
+    width: 100%;
+    height: 100%;
+    animation: pulse 7s ;
+}
+@keyframes pulse {
+    0% {
+      background-color: #000000;
+    }
+    100% {
+      background-color: #cacaca;
+    }
+  }
 @media (max-width: 768px){
     
     .padre{
